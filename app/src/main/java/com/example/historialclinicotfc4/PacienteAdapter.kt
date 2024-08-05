@@ -41,7 +41,7 @@ class PacienteAdapter(private val pacientes: List<Paciente>,private val context:
                 putExtra("Cantón",paciente.cantonPac)
                 putExtra("Provincia",paciente.provinciaPac)
                 putExtra("Teléfono",paciente.telefonoPac)
-                putExtra("Género", paciente.generoPac)
+                putExtra("genero", paciente.generoPac)
                 putExtra("Estado Civil",paciente.estadoCivilPac)
                 putExtra("Tipo Sangre",paciente.tipoSangrePac)
                 putExtra("Carrera",paciente.carreraPac)
