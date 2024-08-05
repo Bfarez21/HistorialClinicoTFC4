@@ -15,8 +15,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#0e81d0"
         android:padding="16dp">
+<!--        android:background="#0e81d0"-->
+
 
         <ImageView
             android:id="@+id/iconPac"
