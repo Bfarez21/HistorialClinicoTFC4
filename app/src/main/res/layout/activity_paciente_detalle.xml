@@ -23,6 +23,14 @@
             android:background="#772196F3"
             android:padding="16dp">
 
+            <ImageView
+                android:id="@+id/iconPac"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="1dp"
+                android:src="@drawable/usersinfondo"/>
+
             <TextView
                 android:id="@+id/cedulaTextView"
                 android:layout_width="wrap_content"

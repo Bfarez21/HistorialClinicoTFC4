@@ -27,9 +27,9 @@ import androidx.core.content.ContextCompat.startActivity
         holder.profesionPac.text = paciente.profesionPac
 
         val backgroundColor = if (paciente.generoPac.equals("masculino", ignoreCase = true)) {
-            ContextCompat.getColor(context, R.color.blue) // Azul para hombres
+            ContextCompat.getColor(context, R.color.pink) // Azul para hombres
         } else {
-            ContextCompat.getColor(context, R.color.pink) // Rosa para mujeres
+            ContextCompat.getColor(context, R.color.blue) // Rosa para mujeres
         }
         holder.itemView.setBackgroundColor(backgroundColor)
 
