@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/blue" android:stateChecked="true"/> <!-- Azul para hombres -->
+    <item android:color="@color/pink" android:stateChecked="false"/> <!-- Rosa para mujeres -->
+    <item android:color="@android:color/white"/> <!-- Color de fondo por defecto -->
+</selector>

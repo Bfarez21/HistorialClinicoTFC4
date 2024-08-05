@@ -7,10 +7,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import android.content.Intent
 import android.content.Context
+import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.startActivity
 
         //Context sirve para iniciar nuevas actividades
-class PacienteAdapter(private val pacientes: List<Paciente>,private val context: Context) : RecyclerView.Adapter<PacienteAdapter.PacienteViewHolder>() {
+        class PacienteAdapter(private val pacientes: List<Paciente>, private val context: Context) :
+            RecyclerView.Adapter<PacienteAdapter.PacienteViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PacienteViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_paciente, parent, false)
@@ -23,6 +25,13 @@ class PacienteAdapter(private val pacientes: List<Paciente>,private val context:
         holder.nombrePac.text = paciente.nombrePac
         holder.apellidoPac.text = paciente.apellidoPac
         holder.profesionPac.text = paciente.profesionPac
+
+        val backgroundColor = if (paciente.generoPac.equals("masculino", ignoreCase = true)) {
+            ContextCompat.getColor(context, R.color.blue) // Azul para hombres
+        } else {
+            ContextCompat.getColor(context, R.color.pink) // Rosa para mujeres
+        }
+        holder.itemView.setBackgroundColor(backgroundColor)
 
         // putextars para pasar los datos a vista detalle
         //context es la clase paciuenteAdapter
