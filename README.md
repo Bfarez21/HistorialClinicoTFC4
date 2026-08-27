@@ -35,7 +35,13 @@ Aplicación móvil nativa para Android desarrollada para el **Sistema Integrado 
 * **QA & Pruebas:** Verificación de la respuesta, adaptabilidad e integración con el Backend.
 
 ---
+## 📸 Capturas de la Aplicación Móvil
 
+| Inicio de Sesión | Menú Principal / Módulos | Gestión de Pacientes |
+| :---: | :---: | :---: |
+| ![Login Móvil](./screenshots/01-mobile-login.jpeg) | ![Menú Principal](./screenshots/02-mobile-paciente.jpeg) | ![Lista de Pacientes](./screenshots/03-mobile-list.jpeg) |
+
+---
 ## 🔗 Repositorios del Sistema Integrado
 
 * ⚙️ **Backend API:** [HistorialClinico](https://github.com/Bfarez21/HistorialClinico)
